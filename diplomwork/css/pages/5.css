@@ -1,0 +1,112 @@
+/* карта */
+#section-25 {
+	position: relative;
+	height: 550px;
+}
+
+#row-3 .col-1 {
+	position: relative;
+	z-index: 1;
+	margin-top: 70px;
+	border-radius: 5px;
+	background: linear-gradient(179.9deg, #013B84 45.92%, rgba(177, 185, 255, 0.67) 99.91%);
+	color: #fff;
+	padding: 70px 50px 70px 50px;
+	max-width: 400px;
+	width: auto;
+}
+
+#row-3 .col-2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#widget-32 {
+	font-size: 25px;
+}
+
+#widget-33 {
+	margin-top: 60px;
+}
+
+#widget-32 h3 {
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+/*  Контакты  */
+#section-26 {
+	color: white;
+	background: linear-gradient(88.84deg, #013B84 10.81%, rgba(177, 185, 255, 0.74) 98.01%);
+	padding: 70px 0;
+}
+
+#section-26 h2 {
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+#section-26 h4 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#section-26 p {
+	margin: 0;
+}
+
+#section-26 a {
+    color: white;
+}
+
+#section-26 a:hover {
+    color: #c2dfff;
+}
+
+/* расстояние между "отделами продаж" */
+#widget-37, #widget-38 {
+	margin-bottom: 40px;
+}
+
+/**
+Адаптив для карты
+ */
+@media (max-width:700px) {
+	#section-25 {
+		height: auto;
+	}
+
+	#section-25 > .container {
+		padding: 0;
+	}
+
+	#row-3 {
+		gap: 0;
+	}
+
+	#row-3 .col-1 {
+		max-width: none;
+		width: 100%;
+		border-radius: 0;
+		margin: 0;
+		padding: 100px 10px;
+		padding-bottom: 70px;
+	}
+
+	#widget-33 {
+		display: none;
+	}
+
+	#row-3 .col-2 {
+		position: static;
+		overflow: hidden;
+	}
+
+	#row-3 .col-2 iframe {
+		height: 320px !important;
+	}
+}
